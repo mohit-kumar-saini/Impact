@@ -8,6 +8,7 @@ public class compatible_array {
         int m = sc.nextInt();
         int[] a = new int[n];
         int[] b = new int[m];
+        int count = 0;
 
         for (int i = 0; i < n; i++) {
             a[i] = sc.nextInt();
@@ -20,15 +21,18 @@ public class compatible_array {
 
         for (int i = 0; i < n; i++)
         {
-            for (int j = 0; j < m; j++)
-            {
-                if (a[i] >= b[j]) {
-                    System.out.println("Compatible");
-                    return;
-                }
+            if (a[i] >= b[i]) {
+                count++;
             }
         }
-        
+
+        if(count == n ) 
+        {
+            System.out.println("YES Both are compatible");
+        } else
+        {
+            System.out.println("NO Both are not compatible");
+        }
         sc.close();
     }
 }
