@@ -46,6 +46,14 @@ public class median {
         }
 
         System.out.println("\nMedian: " + median);
+
+        int medianInt = (int) median;
+        String medianStr = String.valueOf(medianInt);
+        System.out.print("Digits in median: ");
+        for (char c : medianStr.toCharArray()) {
+            System.out.print(c + " ");
+        }
+
         sc.close();
     }
 }
