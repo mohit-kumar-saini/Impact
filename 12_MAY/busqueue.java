@@ -1,21 +1,26 @@
 import java.util.*;
 
-public class busqueue {
-    public static void main(String[] args) {
+public class busqueue 
+{
+    public static void main(String[] args) 
+    {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int m = sc.nextInt();
         int[] groups = new int[n];
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) 
+        {
             groups[i] = sc.nextInt();
         }
         
         int buses = 0, currentCapacity = 0;
         for (int i = 0; i < n; i++) {
-            if (currentCapacity + groups[i] > m) {
+            if (currentCapacity + groups[i] > m) 
+            {
                 buses++;
                 currentCapacity = groups[i];
-            } else {
+            } else 
+            {
                 currentCapacity += groups[i];
             }
         }
