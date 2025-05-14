@@ -24,7 +24,7 @@ public class oilContainer {
         }
 
         if (left == right) {
-            System.out.print(", (" + arr[right] + ")");
+            System.out.print(", (" + arr[right] + "," +  0 + ")");
         }
 
         sc.close();
