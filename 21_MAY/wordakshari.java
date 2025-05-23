@@ -6,9 +6,33 @@ public class wordakshari
     {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a string: ");
-        String str = sc.nextLine();
-        String[] words = str.split(" ");
+        String prev = sc.nextLine();
+
+        System.out.println(prev);
+
+        while(true)
+        {
+            System.out.print("Enter a string: ");
+            String curr = sc.nextLine();
+
+            if (curr.equals("####")) 
+            {
+                break;
+            }
+
+            char lastChar = prev.charAt(prev.length() - 1);
+            char firstChar = curr.charAt(0);
+
+            if (lastChar == firstChar) 
+            {
+                System.out.println(curr);
+                prev = curr; 
+            } 
+            else 
+            {
+                break;
+            }
+        }
         sc.close();
-    }
-    
+    }   
 }

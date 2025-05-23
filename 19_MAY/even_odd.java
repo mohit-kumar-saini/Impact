@@ -1,6 +1,6 @@
 import java.util.*;;
 
-public class even_odd 
+public class even_Odd
 {
     public static void main(String[] args) 
     {
