@@ -55,5 +55,6 @@ public class add_numbers_only {
 
         System.out.println("Sum of numbers: " + sum);
         sc.close();
+
     }
 }
