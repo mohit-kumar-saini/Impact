@@ -16,12 +16,10 @@ class D implements B, C
     {
         System.out.println("Method A from Interface A");
     }
-
     public void methodB() 
     {
         System.out.println("Method B from Interface B");
     }
-
     public void methodC() 
     {
         System.out.println("Method C from Interface C");
@@ -31,7 +29,6 @@ class D implements B, C
         System.out.println("Method D from Class D");
     }
 }
-
 public class OOPS_Hybrid_Inheritance 
 {
     public static void main(String[] args) 
